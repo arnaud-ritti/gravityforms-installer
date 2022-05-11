@@ -17,9 +17,9 @@ class DownloadParser implements DownloadParserInterface
     public function parsePackage(string $url): array
     {
         $datas = @file_get_contents($url);
-        if(empty($datas)){
+        if (empty($datas)) {
             throw new PackageParserException("No valid package datas");
         }
-        return unserialize($datas);
+        return (array) unserialize($datas);
     }
 }

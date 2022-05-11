@@ -5,4 +5,4 @@ COPY test.key /etc/ssl/test.key
 RUN mkdir -p /var/www/html/packages
 RUN mkdir -p /var/www/html/wp-content/plugins/gravitymanager
 COPY fake-package.zip /var/www/html/packages/fake-package.zip
-COPY api.php /var/www/html/wp-content/plugins/gravitymanager/api.php
+COPY api.txt /var/www/html/wp-content/plugins/gravitymanager/api.php

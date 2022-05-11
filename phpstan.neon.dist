@@ -22,3 +22,8 @@ parameters:
         -
             message: "# with no value type specified in iterable type array#"
             path: src/Download/Interceptor/RewriteUrlRemoteFilesystem.php
+        -
+            message: "# return type has no value type specified in iterable type array#"
+            paths: 
+                - src/Download/DownloadParser.php
+                - src/Download/DownloadParserInterface.php

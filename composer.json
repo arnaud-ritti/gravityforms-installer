@@ -44,7 +44,7 @@
     "lint": "phpcs src tests --standard=PSR2",
     "fix": "phpcbf src tests --standard=PSR2",
     "test": "phpunit -c phpunit.xml.dist --testsuite unit",
-    "test-ci": "phpunit -c phpunit.xml.dist --teamcity --testsuite unit",
+    "test-ci": "phpunit -c phpunit.xml.dist --testsuite unit",
     "integration-test": "phpunit -c phpunit.xml.dist --testsuite integration --verbose --no-coverage",
     "analyse": "phpstan analyse",
     "coverage": "phpunit -c phpunit.xml.dist --testsuite unit --coverage-html coverage",

@@ -54,8 +54,5 @@ jobs:
           mkdir -p build/logs
           composer run test-ci
 
-      - name: Check code coverage
-        run: composer run coverage-check
-
       - name: Run Integration tests
         run: composer run --timeout 600 integration-test

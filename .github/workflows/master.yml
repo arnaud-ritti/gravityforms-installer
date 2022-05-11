@@ -57,15 +57,6 @@ jobs:
           mkdir -p build/logs
           composer run test-ci
 
-      - name: Check code coverage
-        run: composer run coverage-check
-
-      - uses: codecov/codecov-action@v1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: build/logs/clover.xml
-          fail_ci_if_error: true
-
       - name: Run Integration tests
         run: composer run --timeout 600 integration-test
 

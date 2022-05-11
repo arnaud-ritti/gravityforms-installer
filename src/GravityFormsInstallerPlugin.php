@@ -145,7 +145,8 @@ class GravityFormsInstallerPlugin implements PluginInterface, EventSubscriberInt
             $this->composer,
             $this->io
         );
-        $packageDatas = $this->downloadParser->parsePackage($this->urlLicenseKeyAppender->append($packageUrl, $this->getLicenseKey()));
+        $url = $this->urlLicenseKeyAppender->append($packageUrl, $this->getLicenseKey());
+        $packageDatas = $this->downloadParser->parsePackage($url);
         if (empty($packageDatas["download_url_latest"])) {
             return;
         }

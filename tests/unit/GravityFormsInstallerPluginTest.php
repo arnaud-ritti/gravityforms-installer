@@ -20,7 +20,6 @@ use ArnaudRitti\Composer\Installers\GravityForms\Exceptions\MissingKeyException;
 use ArnaudRitti\Composer\Installers\GravityForms\LicenseKey\Appenders\UrlLicenseKeyAppenderInterface;
 use ArnaudRitti\Composer\Installers\GravityForms\LicenseKey\Providers\LicenseKeyProviderFactoryInterface;
 use ArnaudRitti\Composer\Installers\GravityForms\LicenseKey\Providers\LicenseKeyProviderInterface;
-use ArnaudRitti\Composer\Installers\GravityForms\Test\Download\Interceptor\BackwardsCompatibleDownloadInterceptorFactoryTest;
 
 class GravityFormsInstallerPluginTest extends TestCase
 {

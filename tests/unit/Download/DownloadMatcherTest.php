@@ -10,6 +10,7 @@ class DownloadMatcherTest extends TestCase
 {
     public function testMatchesWithUrlReturnsTrue()
     {
+        // phpcs:ignore
         $url = "https://gravityapi.com/wp-content/plugins/gravitymanager/api.php?op=get_plugin&slug=gravityforms&key=938C927AFC694954A84476CF3CBD28B3";
         $sut = new DownloadMatcher();
         $this->assertTrue($sut->matches($url));
