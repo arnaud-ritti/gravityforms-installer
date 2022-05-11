@@ -11,4 +11,4 @@ COPY packages.json /registry/packages.json
 WORKDIR /plugin
 COPY release /plugin
 WORKDIR /app
-CMD php -v && composer --version && composer install --no-dev --no-scripts --no-progress  -vvv
+CMD php -v && composer --version && composer install --no-dev --no-scripts --no-progress

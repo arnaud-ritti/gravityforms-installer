@@ -1,10 +1,10 @@
 # Gravity Forms Installer
 
-[![Packagist](https://img.shields.io/packagist/v/pivvenit/acf-pro-installer.svg?maxAge=3600)](https://packagist.org/packages/pivvenit/acf-pro-installer)[![Packagist](https://img.shields.io/packagist/l/pivvenit/acf-pro-installer.svg?maxAge=2592000)](https://github.com/pivvenit/acf-pro-installer/blob/master/LICENSE)![](https://github.com/pivvenit/acf-pro-installer/workflows/Master%20Build/badge.svg)
+[![Packagist](https://img.shields.io/packagist/v/arnaud-ritti/gravityforms-installer.svg?maxAge=3600)](https://packagist.org/packages/arnaud-ritti/gravityforms-installer)[![Packagist](https://img.shields.io/packagist/l/arnaud-ritti/gravityforms-installer.svg?maxAge=2592000)](https://github.com/arnaud-ritti/gravityforms-installer/blob/master/LICENSE)![](https://github.com/arnaud-ritti/gravityforms-installer/workflows/Master%20Build/badge.svg)
 [![Dependabot](https://badgen.net/badge/Dependabot/enabled/green?icon=dependabot)](https://dependabot.com/)
-[![Coverage Status](https://coveralls.io/repos/github/pivvenit/acf-pro-installer/badge.svg?branch=master)](https://coveralls.io/github/pivvenit/acf-pro-installer?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/arnaud-ritti/gravityforms-installer/badge.svg?branch=master)](https://coveralls.io/github/arnaud-ritti/gravityforms-installer?branch=master)
 
-A composer plugin that makes installing [ACF PRO] with [composer] easier. 
+A composer plugin that makes installing [Gravity Forms] with [composer] easier. 
 
 It reads your :key: Gravity Forms key from the **environment** or a **.env file**.
 
@@ -16,7 +16,7 @@ It reads your :key: Gravity Forms key from the **environment** or a **.env file*
 > This plugin is compatible with Both Composer 2.x (latest) and 1.x
 
 **1. Add our [Gravity Forms Composer Bridge](https://github.com/arnaud-ritti/gravityforms-composer-bridge) repository to the [`repositories`][composer-repositories] field in `composer.json`**
-> This repository simply provides a periodically updated [packages.json](https://arnaud-ritti.github.io/gravityforms-composer-bridge/composer/v2/packages.json), that redirects composer to the ACF provided downloads. 
+> This repository simply provides a periodically updated [packages.json](https://arnaud-ritti.github.io/gravityforms-composer-bridge/composer/v2/packages.json), that redirects composer to the provided downloads. 
 Note that this repository **does not** provide any Gravity Forms packages itself, it only tells Composer where it can find packages.
 Secondly it is important to note that **your license key is not submitted to the repository**, since the installer downloads the zip files directly from servers.
 
@@ -27,23 +27,23 @@ Since it enables you to use `gravityforms/gravityforms` package with version con
 ```json
 {
   "type": "composer",
-  "url": "https://arnaud-ritti.github.io/gravityforms-composer-bridge/composer/v3/wordpress-plugin/"
+  "url": "https://arnaud-ritti.github.io/gravityforms-composer-bridge/composer/v1/wordpress-plugin/"
 }
 ```
 
 This installs the package as `wordpress-plugin` type, in case you want a different type, use the following URL:
 
 wordpress-muplugin:
-> `https://arnaud-ritti.github.io/gravityforms-composer-bridge/composer/v3/wordpress-muplugin/`
+> `https://arnaud-ritti.github.io/gravityforms-composer-bridge/composer/v1/wordpress-muplugin/`
 
 wpackagist-plugin:
-> `https://arnaud-ritti.github.io/gravityforms-composer-bridge/composer/v3/wpackagist-plugin/`
+> `https://arnaud-ritti.github.io/gravityforms-composer-bridge/composer/v1/wpackagist-plugin/`
 
 library:
-> `https://arnaud-ritti.github.io/gravityforms-composer-bridge/composer/v3/library/`
+> `https://arnaud-ritti.github.io/gravityforms-composer-bridge/composer/v1/library/`
 
 
-**2. Make your ACF PRO key available**
+**2. Make your key available**
 
 There are 3 ways to make the GRAVITYFORMS_KEY available:
 - Using the GRAVITYFORMS_KEY environment variable
@@ -86,7 +86,7 @@ You specify the `gravityforms-key` in the `config` section of your `$COMPOSER_HO
 composer require gravityforms/gravityforms
 ```
 
-***3.c. Install add-on***
+***3.b. Install add-on***
 
 ```sh
 composer require gravityforms/<slug>
