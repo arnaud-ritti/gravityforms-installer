@@ -94,7 +94,7 @@ composer require gravityforms/<slug>
 
 Example :
 ```sh
-composer require gravityforms/gravityformsactivecampaign
+composer require gravityforms/activecampaign
 ```
 
 [composer-repositories]: https://getcomposer.org/doc/04-schema.md#repositories
