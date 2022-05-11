@@ -1,0 +1,30 @@
+{
+  "name": "test/gravityforms-installer-test",
+  "description": "A Test project for installer",
+  "license": "MIT",
+  "repositories": [
+    {
+      "type": "path",
+      "url": "/plugin",
+      "version": "dev-master"
+    },
+    {
+      "type": "composer",
+      "url": "file:///registry/packages.json"
+    }
+  ],
+  "keywords": [
+    "test"
+  ],
+  "require": {
+    "gravityforms/gravityforms": "dev-master",
+    "arnaud-ritti/gravityforms-installer": "dev-master"
+  },
+  "config": {
+    "options": {
+      "ssl": {
+        "verify_peer": false
+      }
+    }
+  }
+}

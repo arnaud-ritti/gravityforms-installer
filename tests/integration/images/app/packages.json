@@ -1,0 +1,44 @@
+{
+  "packages": {
+    "gravityforms/gravityforms": {
+      "dev-master": {
+        "name": "gravityforms/gravityforms",
+        "description": "Gravity Forms",
+        "version": "dev-master",
+        "type": "wpackagist-plugin",
+        "license": "GPL-2.0-or-later",
+        "support": {
+          "docs": "https://docs.gravityforms.com"
+        },
+        "homepage": "https://gravityforms.com",
+        "dist": {
+          "type": "zip",
+          "url": "https://gravityapi.com/wp-content/plugins/gravitymanager/api.php?op=get_plugin&slug=gravityforms"
+        },
+        "require": {
+          "arnaud-ritti/gravityforms-installer": "*",
+          "composer/installers": "^1.0 || ^2.0"
+        }
+      },
+      "2.6.3": {
+        "name": "gravityforms/gravityforms",
+        "description": "Gravity Forms",
+        "version": "2.6.3",
+        "type": "wpackagist-plugin",
+        "license": "GPL-2.0-or-later",
+        "support": {
+          "docs": "https://docs.gravityforms.com"
+        },
+        "homepage": "https://gravityforms.com",
+        "dist": {
+          "type": "zip",
+          "url": "https://gravityapi.com/wp-content/plugins/gravitymanager/api.php?op=get_plugin&slug=gravityforms"
+        },
+        "require": {
+          "arnaud-ritti/gravityforms-installer": "*",
+          "composer/installers": "^1.0 || ^2.0"
+        }
+      }
+    }
+  }
+}
